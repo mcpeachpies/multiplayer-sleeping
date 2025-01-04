@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "blue_bed"
+        "id": "blue_bed"
       },
       "title": "Rise and Shine",
       "description": "Sleep through the night for the first time",

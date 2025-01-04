@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "gray_bed"
+      "id": "gray_bed"
     },
     "title": "Late Night",
     "description": "Stay up late and go to bed after midnight",

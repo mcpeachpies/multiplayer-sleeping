@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "blue_bed"
+      "id": "blue_bed"
     },
     "title": "The Wake Up Call",
     "description": "Good morning. You have been in suspension for fifty days.",

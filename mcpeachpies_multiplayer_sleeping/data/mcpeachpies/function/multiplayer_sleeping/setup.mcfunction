@@ -8,8 +8,8 @@ scoreboard objectives add mpp_sleep_kick trigger ["",{"text":"Kick Sleeping Play
 scoreboard players set value_100 mpp_sleep_count 100
 scoreboard players set value_-1 mpp_sleep_count -1
 
-function mcpeachpies_multiplayer_sleeping:player_count
-function mcpeachpies_multiplayer_sleeping:clock_trigger
+function mcpeachpies:multiplayer_sleeping/player_count
+function mcpeachpies:multiplayer_sleeping/clock_trigger
 
 scoreboard players set mpp_sleep_setup mpp_datapacks 1
 

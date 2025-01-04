@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "orange_bed"
+      "id": "orange_bed"
     },
     "title": "The Courtesy Call",
     "description": "Good morning. You have been in suspension for nine nine nine...",

@@ -1,6 +1,6 @@
 # run from exit_bed
 #Other Advancements
-execute as @a[predicate=mcpeachpies_multiplayer_sleeping:in_overworld,gamemode=!spectator] if score @s mpp_sleep_awake matches 20.. run advancement grant @s only mcpeachpies:multiplayer_sleeping/night_shift
+execute as @a[predicate=mcpeachpies:multiplayer_sleeping/in_overworld,gamemode=!spectator] if score @s mpp_sleep_awake matches 20.. run advancement grant @s only mcpeachpies:multiplayer_sleeping/night_shift
 advancement grant @s[tag=mpp_sleep_advlate] only mcpeachpies:multiplayer_sleeping/late_night
 
 #Add to advancement tracker
@@ -8,7 +8,7 @@ scoreboard players add @s mpp_sleep_adv 1
 scoreboard players set @s mpp_sleep_since_c 0
 scoreboard players set @s mpp_sleep_since 0
 
-function mcpeachpies_multiplayer_sleeping:advancement_clean
+function mcpeachpies:multiplayer_sleeping/advancement_clean
 
 #Rise and Shine
 advancement grant @s[scores={mpp_sleep_adv=1..}] only mcpeachpies:multiplayer_sleeping/rise_and_shine
@@ -115,4 +115,4 @@ advancement grant @s[scores={mpp_sleep_adv=47..}] only mcpeachpies:multiplayer_s
 advancement grant @s[scores={mpp_sleep_adv=48..}] only mcpeachpies:multiplayer_sleeping/the_courtesy_call 48
 advancement grant @s[scores={mpp_sleep_adv=49..}] only mcpeachpies:multiplayer_sleeping/the_courtesy_call 49
 
-execute if score @s mpp_sleep_adv matches 50.. run function mcpeachpies_multiplayer_sleeping:advancement_countbulk
+execute if score @s mpp_sleep_adv matches 50.. run function mcpeachpies:multiplayer_sleeping/advancement_countbulk

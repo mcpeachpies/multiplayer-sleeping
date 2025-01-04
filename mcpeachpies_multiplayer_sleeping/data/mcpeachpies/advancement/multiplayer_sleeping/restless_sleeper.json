@@ -1,11 +1,11 @@
 {
   "display": {
     "icon": {
-      "item": "black_bed"
+      "id": "red_bed"
     },
-    "title": "Night Shift",
-    "description": "Work throughout the night while others sleep",
-    "frame": "goal",
+    "title": "Restless Sleeper",
+    "description": "Kick yourself out of bed",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
