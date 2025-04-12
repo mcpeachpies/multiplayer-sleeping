@@ -21,7 +21,7 @@
     },
     "title": "mcpeachpies",
     "description": "mcpeachpies datapack systems",
-    "background": "minecraft:textures/block/acacia_log.png",
+    "background": "minecraft:block/acacia_log",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
