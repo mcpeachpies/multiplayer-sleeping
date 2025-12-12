@@ -1,6 +1,6 @@
 #Run from enter_bed, exit_bed, and pass_time_gateway, gamerule_reset
 #Store player sleeping percentage
-execute store result score value_gamerule mpp_sleep_count run gamerule playersSleepingPercentage
+execute store result score value_gamerule mpp_sleep_count run gamerule minecraft:players_sleeping_percentage
 
 #Sleeping Player Count
 execute store result score value_sleepers mpp_sleep_count if entity @a[tag=mpp_in_bed,predicate=mcpeachpies:multiplayer_sleeping/in_overworld]
