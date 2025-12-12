@@ -1,0 +1,25 @@
+name: Compress and Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  compress-and-release:
+    name: Compress and Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Copy license
+        run: cp LICENSE mcpeachpies_multiplayer_sleeping/LICENSE
+      - name: Compress
+        run: |
+          cd mcpeachpies_multiplayer_sleeping
+          zip -r ../mcpeachpies_multiplayer_sleeping.zip *
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: v${{ github.run_id }} ${{ github.event.head_commit.message }}
+          tag_name: v${{ github.run_id }}
+          files: "*.zip"
